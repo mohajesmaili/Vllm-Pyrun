@@ -5,7 +5,7 @@ This script is designed for quick setup of large language models (LLMs) with cus
 
 ---
 
-## 💡 Features
+## Features
 
 - Easily configure **model name**, **GPU devices**, **VRAM limits**, and **batch sizes**.
 - Supports **dtype selection** or **quantization modes**.
@@ -15,7 +15,7 @@ This script is designed for quick setup of large language models (LLMs) with cus
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 Inside the Python script, you can customize:
 
@@ -32,7 +32,7 @@ Inside the Python script, you can customize:
 
 ---
 
-## 🔥 Logic
+## Logic
 
 - If both `QUANTIZATION` and `DTYPE` are set, the script forces `float16` mode and warns the user.
 - If only `QUANTIZATION` is set, the model will run in quantized mode.
@@ -41,7 +41,7 @@ Inside the Python script, you can customize:
 
 ---
 
-## 🚀 How To Run
+## How To Run
 
 1. Install `vllm` in your environment:
     ```bash
@@ -59,7 +59,7 @@ Inside the Python script, you can customize:
 
 ---
 
-## ⚠️ Error Handling
+## Error Handling
 
 If the subprocess fails, the script will catch the error and print the error details in the terminal:
 
