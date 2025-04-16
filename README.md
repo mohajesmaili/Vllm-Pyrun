@@ -19,16 +19,16 @@ This script is designed for quick setup of large language models (LLMs) with cus
 
 Inside the Python script, you can customize:
 
-| Variable         | Purpose                                      | Example Value       |
+| Variable         | Purpose                                      | Example Value        |
 |------------------|----------------------------------------------|----------------------|
-| `MODEL_NAME`     | Name of the model to launch via VLLM         | `Models.QWEN25_72B.value` |
-| `PORT`           | Server port number                           | `8190`               |
-| `GPUS`           | GPU IDs to use (comma-separated)            | `6,7`                |
+| `MODEL_NAME`     | Name of the model to launch via VLLM         | `Model Name`         |  
+| `PORT`           | Server port number                           | `9000`               |
+| `GPUS`           | GPU IDs to use (comma-separated)             | `0,1,2,3,4`          |
 | `VRAM_LIMIT`     | Maximum GPU memory utilization (0~1)         | `0.9`                |
-| `BATCH_SIZE`     | Maximum number of concurrent sequences       | `150`                |
+| `BATCH_SIZE`     | Maximum number of concurrent sequences       | `100`                |
 | `MAX_TOKENS`     | Maximum tokens per batch                     | `3000`               |
 | `DTYPE`          | Floating point type (Default: `float16`)     | `float16`            |
-| `QUANTIZATION`   | Quantization mode (Example: `fp8`)           | `""` (empty by default) |
+| `QUANTIZATION`   | Quantization mode (Example: `fp8`)           | `"fp8"`              |
 
 ---
 
